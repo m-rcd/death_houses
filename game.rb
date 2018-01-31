@@ -120,9 +120,9 @@ def door_2
  end
 
  def start
-   puts " you've been walking in a forest and suddenly you find your way out."
-   puts " you find yourself in front of 3 houses, a white house ,a blue house, and a black house"
-   puts " which one do you enter?"
+   puts " You've been walking in a forest and suddenly you find your way out."
+   puts " You find yourself in front of 3 houses, a white house ,a blue house, and a black house"
+   puts " Which one do you enter?"
 
    print "< "
    choice = $stdin.gets.chomp
