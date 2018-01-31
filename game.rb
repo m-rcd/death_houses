@@ -1,8 +1,8 @@
 def white_house
-  puts " you find 2 doors"
-  puts "which one do you pick? door 1 or 2 ?"
+  puts "You find 2 doors"
+  puts "Which one do you pick? door 1 or 2 ?"
 
-  print ">"
+  print "< "
   choice = $stdin.gets.chomp
 
   if choice == "1"
@@ -10,26 +10,26 @@ def white_house
   elsif choice == "2"
     door_2
   else
-    die("the space gets smaller and smaller until it squashes you")
+    die("The space gets smaller and smaller until it squashes you")
   end
 end
 
 def door_1
-  puts "you find a red box and a blue box"
-  puts "which one do you open"
+  puts "You find a red box and a blue box"
+  puts "Which one do you open"
 
-  print ">"
+  print "< "
   choice = $stdin.gets.chomp
 
   if choice.include?("red")
-    puts "you find a lot of books"
-    puts "what do you do?"
+    puts "You find a lot of books"
+    puts "What do you do? Do you pick a book and read or ignore them or what?"
 
-    print ">"
+    print "< "
     choice = $stdin.gets.chomp
 
     if choice == "pick a book and read "
-      puts "you win"
+      puts "You win!wohooo"
       exit(0)
     elsif choice == "ignore them"
       die("your head falls off you illiterate")
@@ -39,18 +39,19 @@ def door_1
     end
 
   elsif choice.include?("blue")
-      puts "you find dolls who came to life"
-      puts "what do you do ?"
+      puts "You find dolls who came to life"
+      puts "Do you scream and run, attack them or what?"
 
-      print "<"
+      print "< "
       choice = $stdin.gets.chomp
 
       if choice == "scream and run"
         die("dolls are faster than you.they caught you and strangled you")
       elsif choice == "attack them"
-        puts " you win"
+        puts "You win!"
         black_house
       else
+        puts "Sending you to the blue house"
         blue_house
       end
 
@@ -62,9 +63,9 @@ end
 
 def door_2
     puts "you find some vampires sitting around"
-    puts "what do you do?"
+    puts "What do you do?Do you say hello to them or bow to them or what?"
 
-    print "<"
+    print "< "
     choice = $stdin.gets.chomp
 
     if choice == "say hello"
@@ -82,7 +83,7 @@ def door_2
    puts "you find two buttons, one red and one black"
    puts "which one do you press?"
 
-   print "<"
+   print "< "
    choice = $stdin.gets.chomp
 
    if choice.include?("red")
@@ -90,7 +91,7 @@ def door_2
    elsif choice.include?("black")
      puts "it starts to rain" , "what do you do? Do you go out or enjoy the rain or what?"
 
-     print "<"
+     print "< "
      choice = $stdin.gets.chomp
 
      if choice == "go out"
